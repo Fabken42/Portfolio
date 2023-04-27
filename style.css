@@ -1,0 +1,29 @@
+@import url('./styles/header.css');
+@import url('./styles/main.css');
+@import url('./styles/footer.css');
+
+/* MC - modo claro
+ME - modo escuro */
+:root{
+    --letra-MC: #1e1f22;
+    --letra-ME: #f2f3f5;
+    --cor-primaria-MC: #FEFAE0;
+    --cor-primaria-ME: #002222;
+    --cor-secundaria-MC: #FAEDCD;
+    --cor-secundaria-ME: #001818;
+    --cor-especial: #503775;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria-MC);
+    color: var(--letra-MC);
+}
+
+.body-escuro{
+    background-color: var(--cor-primaria-ME);
+    color: var(--letra-ME);
+}

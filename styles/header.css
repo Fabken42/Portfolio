@@ -1,0 +1,76 @@
+/* CABECALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho-claro {
+    background-color: var(--cor-secundaria-MC);
+}
+
+.cabecalho-escuro {
+    background-color: var(--cor-secundaria-ME);
+}
+
+.cabecalho-esq {
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.cabecalho-esq__titulo__autor {
+    color: var(--cor-especial);
+}
+
+/* TOGGLE MODO CLARO/ESCURO */
+.btn-modo {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddd;
+    transition: all .5s;
+}
+
+.btn-modo::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.btn-modo.ativo {
+    background-color: #0055b1;
+}
+
+.btn-modo.ativo::before {
+    transform: translateX(20px);
+}
+
+.cabecalho-dir {
+    margin-right: 1em;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+  

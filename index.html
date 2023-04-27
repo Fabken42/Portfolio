@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio de Fabrício K.</title>
+  <link rel="shortcut icon" href="./img/programming.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="cabecalho cabecalho-claro">
+    <div class="cabecalho-esq">
+      <h1 class="cabecalho-esq__titulo">Portfólio de <span class="cabecalho-esq__titulo__autor">Fabrício Kohatsu</span></h1>
+      <button class="btn-modo"></button>
+    </div>
+    <div class="cabecalho-dir">
+      <nav>
+        <ul class="links">
+          <li class="link inicio">Início</li>
+          <li class="link sobre-mim">Sobre Mim</li>
+          <li class="link projetos">Projetos</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="secs">
+    <section class="sec inicio ativo">
+      <div>
+        <img src="./img/fabricioK.jpeg" alt="foto de perfil de Fabricio Kohatsu" class="inicio__ft-autor">
+      </div>
+      <div class="inicio__descricao">
+        <h2 class="inicio-titulo">Visão Geral</h2>
+        <p>Olá, me chamo Fabrício Kohatsu. Concluí o 1° ano em Análise e Desenvolvimento de Sistemas (IFSP - Boituva).
+          Programo há 2 anos e atualmente estudo por conta própria, na busca de uma vaga de emprego como programador.
+        </p>
+        <button class="inicio-download-cv-btn" onclick="window.open('./pdf/cvFabricio.pdf','_blank')" download>Download CV</button>
+      </div>
+
+    </section>
+    <section class="sec sobre-mim">
+      <div>
+        <h2>Experiência Profissional</h2>
+        <p>
+          Não tenho experiência profissional na área de T.I., porém no fins de semana ajudo meu pai em seu restaurante,
+          há dois anos. Nesse período aprendi a lidar com o estresse e a valorizar o trabalho em equipe.
+        </p>
+      </div>
+      <div>
+        <h2>Personalidade & Interesses</h2>
+        <p>
+          Introspectivo e curioso, sempre refletindo e explorando ideias e conceitos abstratos. Analítico e lógico,
+          adoro desmontar problemas complexos e procurar soluções criativas. Sempre disposto a ouvir outras perspectivas
+          e aprender com os outros. Interesses: teclado, xadrez e idioma japonês.
+        </p>
+      </div>
+      
+      <h3 class="linguagens-programacao-titulo">Linguagens de Programação</h3>
+      <div>
+        <div class="linguagens-programacao">
+          <div class="linguagens-programacao__html">
+            <h4>HTML</h4>
+            <div class="barra-progresso">
+              <div class="progresso progresso-html"></div>
+            </div>
+          </div>
+          <div class="linguagens-programacao__css">
+            <h4>CSS</h4>
+            <div class="barra-progresso">
+              <div class="progresso progresso-css"></div>
+            </div>
+          </div>
+          <div class="linguagens-programacao__javascript">
+            <h4>JavaScript</h4>
+            <div class="barra-progresso">
+              <div class="progresso progresso-js"></div>
+            </div>
+          </div>
+          <div class="linguagens-programacao__react">
+            <h4>React</h4>
+            <div class="barra-progresso">
+              <div class="progresso progresso-react"></div>
+            </div>
+          </div>
+          <div class="linguagens-programacao__python">
+            <h4>Python</h4>
+            <div class="barra-progresso">
+              <div class="progresso progresso-python"></div>
+            </div>
+          </div>
+          <div class="linguagens-programacao__c">
+            <h4>C</h4>
+            <div class="barra-progresso">
+              <div class="progresso progresso-c"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h3 class="idiomas-titulo">Idiomas</h3>
+      <div class="idiomas">
+        <div class="idiomas__ingles">
+          <h4>Inglês</h4>
+          <div class="barra-progresso">
+            <div class="progresso progresso-ingles"></div>
+          </div>
+        </div>
+        <div class="idiomas__espanhol">
+          <h4>Espanhol</h4>
+          <div class="barra-progresso">
+            <div class="progresso progresso-espanhol"></div>
+          </div>
+        </div>
+        <div class="idiomas__japones">
+          <h4>Japonês</h4>
+          <div class="barra-progresso">
+            <div class="progresso progresso-japones"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec projetos">
+      <div class="carrossel-container">
+        <div class="carrossel-slide">
+          <h3 class="slide-titulo">Acerte os alvos!</h3>
+          <a href="https://aim-trainer-fawn.vercel.app" target="_blank"><img src="./img/aimTrainer.png"
+            alt="Slide acerte os alvos"></a>
+        </div>
+        <div class="carrossel-slide">
+          <h3 class="slide-titulo">Simon Game</h3>
+          <a href="https://aim-trainer-fawn.vercel.app" target="_blank"><img src="./img/aimTrainer.png"
+            alt="Slide Simon Game"></a>
+        </div>
+        <button class="carrossel-anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="carrossel-proximo"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape rodape-claro">
+    <div class="redes-sociais">
+      <p>Redes sociais:</p>
+      <a href="https://www.facebook.com/fabricio.kenzo.7" target="_blank"><i
+        class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/fabricio_1512/" target="_blank"><i
+          class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="https://github.com/Fabken42" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+        </div>
+        <div class="contato">
+          <p>Entre em contato: <span class="contato-email">fabken42@gmail.com</span></p>
+        </div>
+      </footer>
+      <script src="./script.js"></script>
+    </body>
+    
+    </html>

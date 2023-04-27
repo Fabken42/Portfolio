@@ -1,0 +1,30 @@
+.rodape {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rodape-claro {
+    background-color: var(--cor-secundaria-MC);
+}
+
+.rodape-escuro {
+    background-color: var(--cor-secundaria-ME);
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.redes-sociais>a {
+    color: rgb(114, 114, 114);
+}
+
+.contato-email{
+    color: var(--cor-especial);
+}
