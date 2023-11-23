@@ -1,0 +1,32 @@
+.espacamento-conteudo{
+    padding-top: 80px;
+}
+
+.retrato{
+    max-width: 400px !important;
+}
+
+.sobre-mim, .inicio, .carrossel{
+    scroll-margin-top: 90px;
+}
+
+.barra-progresso{
+    height: 20px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .retrato{
+        max-width: 240px !important;
+        margin-bottom: 10px;
+    }
+}
+
+.carrossel{
+    width: 80vw;
+    max-width: 980px;
+    margin: 0 auto !important;
+}
+
+.link-no-underline{
+    text-decoration: none;
+}
