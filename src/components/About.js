@@ -9,7 +9,7 @@ const SobreMim = () => {
           <Col md={6}>
             <h2>Personalidade & Interesses</h2>
             <p>
-              Introspectivo e curioso, sempre explorando ideias e conceitos abstratos. Analítico e lógico, adoro desmontar problemas complexos e procurar soluções criativas. Sempre disposto a ouvir outras perspectivas e aprender com os outros. Interesses: teclado, xadrez e idioma japonês.
+              Introspectivo e curioso, sempre explorando ideias e conceitos abstratos. Analítico e lógico, adoro desmontar problemas complexos e procurar soluções criativas. Sempre disposto a ouvir outras perspectivas e aprender com os outros. <strong>Interesses:</strong> teclado, xadrez e idioma japonês.
             </p>
           </Col>
           <Col md={6}>
