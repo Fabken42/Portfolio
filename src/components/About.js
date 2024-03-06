@@ -13,9 +13,9 @@ const SobreMim = () => {
             </p>
           </Col>
           <Col md={6}>
-            <h2>Experiência Profissional</h2>
+            <h2>Experiência em Projetos Pessoais</h2>
             <p>
-              Desenvolvedor web. Embora não tenha experiência profissional na área de TI, adquiri conhecimentos valiosos em design e desenvolvimento de sites por meio de projetos pessoais.
+              Através do desenvolvimento de aplicações Full Stack em MERN, aprendi etapas referentes ao desenvolvimento de interfaces de usuário, configuração do servidor, criação de APIs, tratamento de erros, validação de usuário e manipulação de dados no banco de dados.
             </p>
           </Col>
         </Row>
