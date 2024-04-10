@@ -7,7 +7,7 @@ import './components/styles.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-light">
       <Header/>
       <div className="espacamento-conteudo"></div>
       <Home/>

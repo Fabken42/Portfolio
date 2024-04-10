@@ -7,7 +7,7 @@ export default function Header() {
             <Container>
                 <Navbar.Brand>
                     <Nav.Link href="#home">
-                        <h1 className='display-6'>Portfólio de Fabrício K.</h1>
+                        <h1 className='display-6'>Portfólio de <span className='text-primary'>Fabrício K.</span></h1>
                     </Nav.Link>
                 </Navbar.Brand>
 
