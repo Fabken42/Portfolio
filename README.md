@@ -2,7 +2,7 @@
 
 Este é o repositório do meu portfólio, onde compartilho informações sobre mim, meus projetos e experiências.
 
-### Visão Geral
+## Visão Geral
 
 Neste repositório, você encontrará:
 
