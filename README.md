@@ -23,5 +23,5 @@ Aqui estão alguns dos projetos que desenvolvi:
 
 ## Contato
 
-Você pode me contatar através do seguinte email: fabken42@gmail.com
+Você pode me contatar através do email: fabken42@gmail.com ou do número: (11) 95381-8106
 
