@@ -30,3 +30,24 @@
 .link-no-underline{
     text-decoration: none;
 }
+
+/* Adicione este CSS ao seu arquivo de estilos */
+.footer-icon {
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.2);
+    color: #ffcc00; /* Cor desejada ao passar o mouse */
+  }
+  
+  .copy-email {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .copy-email:hover {
+    color: #ffcc00; /* Cor desejada ao passar o mouse */
+  }
+  
