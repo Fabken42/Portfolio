@@ -19,7 +19,7 @@ Olá! Me chamo Fabrício Kohatsu e estudo programação. Tenho experiência em p
 Aqui estão alguns dos projetos que desenvolvi:
 
 - **Crowded Narrative (https://crowded-narrative.onrender.com/)**: Projeto Full Stack em MERN para leitura, e criação de narrativas em conjunto com outras pessoas, na qual cada participante escreve um capítulo.
-- **Aim Trainer (https://aim-trainer-fawn.vercel.app/)**: Site em HTML, CSS e JS, utilizando a tag <canvas>. Acerte o maior número de alvos que aparecem na tela antes que desapareçam.
+- **Study Quiz (https://study-quiz.onrender.com)**: Site utilizando MERN stack. Crie listas com termos e definições, e estude-os através de um quiz com alternativas.
 
 ## Contato
 
