@@ -1,53 +1,109 @@
-.espacamento-conteudo{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Partículas */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Evita interferir na interação do usuário */
+    z-index: 0;
+    /* Mantém no fundo */
+    overflow: hidden;
+}
+
+/* Cada partícula */
+.particles div {
+    position: absolute;
+    background: rgb(98, 127, 155); /* Cor base para a opacidade */
+    border-radius: 50%;
+    animation: moveDown 10s infinite ease-in-out;
+  }
+
+/* Animação */
+@keyframes moveDown {
+    0% {
+      transform: translateX(0);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+.texto {
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+.btn {
+    transition: all ease-in-out .3s;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.espacamento-conteudo {
     padding-top: 80px;
 }
 
-.retrato{
+.retrato {
     max-width: 400px !important;
 }
 
-.sobre-mim, .inicio, .carrossel{
+.sobre-mim,
+.inicio,
+.carrossel {
     scroll-margin-top: 90px;
 }
 
-.barra-progresso{
+.barra-progresso {
     height: 20px !important;
 }
 
 @media screen and (max-width: 767px) {
-    .retrato{
+    .retrato {
         max-width: 240px !important;
         margin-bottom: 10px;
     }
 }
 
-.carrossel{
+.carrossel {
     width: 80vw;
     max-width: 980px;
     margin: 0 auto !important;
 }
 
-.link-no-underline{
+.link-no-underline {
     text-decoration: none;
 }
 
-/* Adicione este CSS ao seu arquivo de estilos */
+.icone-info {
+    transition: all ease-in-out .2s;
+    color: #f8f9fa;
+}
+
+.icone-info:hover {
+    color: #e4e4e4;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .footer-icon {
     color: #fff;
     transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .footer-icon:hover {
+}
+
+.footer-icon:hover {
     transform: scale(1.2);
-    color: #ffcc00; /* Cor desejada ao passar o mouse */
-  }
-  
-  .copy-email {
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .copy-email:hover {
-    color: #ffcc00; /* Cor desejada ao passar o mouse */
-  }
-  
+    color: #ffcc00;
+    /* Cor desejada ao passar o mouse */
+}

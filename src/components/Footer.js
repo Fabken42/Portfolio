@@ -3,17 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
-  const copyEmailToClipboard = () => {
-    const email = 'fabken42@gmail.com';
-    navigator.clipboard.writeText(email);
-    window.alert('Email copiado para a área de transferência');
-  };
-
   return (
     <footer className="bg-dark text-white py-3 mt-4">
       <Container>
         <Row className="justify-content-between">
-          <Col md={6}>
+          <Col md={6} className='z-1'>
             <h5>Redes Sociais:</h5>
             <div className="d-flex align-items-center">
               <a href='https://www.instagram.com/fabricio_1512/' target='_blank' rel="noopener noreferrer">
@@ -30,9 +24,9 @@ export default function Footer() {
               </a>
             </div>
           </Col>
-          <Col md={6} className="text-md-end mt-3 mt-md-0">
+          <Col md={6} className="z-1 text-md-end mt-3 mt-md-0">
             <h5>Entrar em Contato:</h5>
-            <p className="mb-0 copy-email" onClick={copyEmailToClipboard}>fabken42@gmail.com</p>
+            <a className="mb-0 text-white" href='mailto:fabken42@gmail.com'>fabken42@gmail.com</a>
           </Col>
         </Row>
       </Container>
