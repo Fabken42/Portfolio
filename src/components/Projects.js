@@ -15,7 +15,7 @@ const projects = [
     link: 'https://video-training-jr8e.onrender.com/',
     github: 'https://github.com/Fabken42/video-training',
     title: 'Complete a legenda dos vídeos e aprenda um novo idioma',
-    descricao: 'Desenvolvido usando MERN stack. Inspirado no site "lyricsTraining", com aspectos de gamificação. Auxilia no aprendizado de novos idiomas.
+    descricao: 'Desenvolvido usando MERN stack. Inspirado no site "lyricsTraining", com aspectos de gamificação. Auxilia no aprendizado de novos idiomas.'
   },
   {
     imageUrl: studyQuiz,
