@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Button, Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import videoTraining from '../img/videoTrainingImg.png';
 import crowdedNarrative from '../img/crowdedNarrative.png';
 import taskTimer from '../img/task-timer.png';
 import studyQuiz from '../img/studyQuiz.png';
@@ -9,6 +10,13 @@ import { faGithub, faChrome } from '@fortawesome/free-brands-svg-icons';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 const projects = [
+  {
+    imageUrl: videoTraining,
+    link: 'https://video-training-jr8e.onrender.com/',
+    github: 'https://github.com/Fabken42/video-training',
+    title: 'Complete a legenda dos vídeos e aprenda um novo idioma',
+    descricao: 'Desenvolvido usando MERN stack. Inspirado no site "lyricsTraining", com aspectos de gamificação. Auxilia no aprendizado de novos idiomas.
+  },
   {
     imageUrl: studyQuiz,
     link: 'https://study-quiz.onrender.com',
