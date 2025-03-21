@@ -13,7 +13,7 @@ export default function Home() {
                     <img
                         src={fotoFabricio}
                         alt="Foto de Fabricio Kohatsu"
-                        className="profile-image"
+                        className="profile-image z-1"
                     />
                 </Col>
 
