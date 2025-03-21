@@ -1,24 +1,23 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import BarraProgresso from './ProgressBar';
-
 
 const SobreMim = () => {
   return (
-    <Container id="about" className='mt-5 text-center sobre-mim'>
-      <Row className='gx-5'>
-        <Col md={6}>
-          <h2 className='text-primary text-center fw-bold z-1'>Personalidade & Interesses</h2>
-          <hr className="mx-auto w-50 border-primary mt-2 mb-4" />
-          <p className='texto'>
-            <strong className='text-primary'>Introspectivo e curioso</strong>, exploro ideias e conceitos abstratos. <strong className='text-primary'>Analítico e lógico</strong>, busco desmontar problemas complexos e procurar soluções criativas. Sempre disposto a ouvir outras perspectivas e aprender com os outros. <strong className='text-primary'>Interesses</strong>: xadrez, origami e idioma japonês.
+    <Container id="about" className="about-container">
+      <Row>
+        <Col md={6} className="about-section">
+          <h2 className="about-title">Personalidade & Interesses</h2>
+          <hr />
+          <p className="about-text">
+            Com uma <span className='highlight'>personalidade introspectiva e curiosa</span>, abordo problemas com lógica e criatividade. <span className='highlight'>Analítico</span> por natureza, tenho facilidade em desmontar problemas complexos e propor <span className='highlight'>soluções objetivas e eficientes</span>. Valorizo o trabalho em equipe e busco constantemente aprimorar minhas habilidades. Meus <span className='highlight'>interesses</span> incluem: xadrez, estudo de japonês, origami e filosofia.
           </p>
         </Col>
-        <Col md={6}>
-          <h2 className='text-primary text-center fw-bold z-1'>Experiência em projetos pessoais</h2>
-          <hr className="mx-auto w-50 border-primary mt-2 mb-4" />
-          <p className='texto'>
-            Através do desenvolvimento de aplicações Full Stack em MERN, aprendi etapas referentes ao desenvolvimento de interfaces de usuário, configuração do servidor, criação de APIs, tratamento de erros, validação de usuário e manipulação de dados no banco de dados.
+        <Col md={6} className="about-section">
+          <h2 className="about-title">Experiência em projetos pessoais</h2>
+          <hr />
+          <p className="about-text">
+            Desenvolvi <span className='highlight'>aplicações Full Stack com base em ideias próprias</span>, aplicando o <span className='highlight'>MERN stack</span> para criar plataformas interativas e funcionais. Entre os projetos, aprendi a <span className='highlight'>elaborar interfaces intuitivas, implementar servidores, e criar APIs personalizadas</span>. Além disso, desenvolvi soluções para validação de usuários e manipulação dinâmica de dados.
           </p>
         </Col>
       </Row>

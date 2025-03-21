@@ -1,99 +1,126 @@
-import React, { useState, useEffect } from 'react';
-import { Card, Button, Container, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import videoTraining from '../img/videoTrainingImg.png';
-import crowdedNarrative from '../img/crowdedNarrative.png';
-import taskTimer from '../img/task-timer.png';
-import studyQuiz from '../img/studyQuiz.png';
-import pixelGames from '../img/pixelGames.png';
+
+import React, { useState } from 'react';
+import { Card, Button, Container, Row, Col, Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faChrome } from '@fortawesome/free-brands-svg-icons';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+
+import videoTraining1 from '../img/videoTrainingImg1.png';
+import videoTraining2 from '../img/videoTrainingImg2.png';
+import videoTraining3 from '../img/videoTrainingImg3.png';
+import videoTraining4 from '../img/videoTrainingImg4.png';
+import videoTraining5 from '../img/videoTrainingImg5.png';
+
+import crowdedNarrative1 from '../img/crowdedNarrative1.png';
+import crowdedNarrative2 from '../img/crowdedNarrative2.png';
+import crowdedNarrative3 from '../img/crowdedNarrative3.png';
+import crowdedNarrative4 from '../img/crowdedNarrative4.png';
+
+import taskTimer1 from '../img/taskTimer1.png';
+import taskTimer2 from '../img/taskTimer2.png';
+
+import studyQuiz1 from '../img/studyQuiz1.png';
+import studyQuiz2 from '../img/studyQuiz2.png';
+import studyQuiz3 from '../img/studyQuiz3.png';
+import studyQuiz4 from '../img/studyQuiz4.png';
+
+import pixelGames1 from '../img/pixelGames1.png';
+import pixelGames2 from '../img/pixelGames2.png';
+import pixelGames3 from '../img/pixelGames3.png';
+import pixelGames4 from '../img/pixelGames4.png';
+import pixelGames5 from '../img/pixelGames5.png';
+import pixelGames6 from '../img/pixelGames6.png';
 
 const projects = [
   {
-    imageUrl: videoTraining,
+    images: [videoTraining1, videoTraining2, videoTraining3,videoTraining4,videoTraining5],
     link: 'https://video-training-jr8e.onrender.com/',
     github: 'https://github.com/Fabken42/video-training',
-    title: 'Complete a legenda dos vídeos e aprenda um novo idioma',
-    descricao: 'Desenvolvido usando MERN stack. Inspirado no site "lyricsTraining", com aspectos de gamificação. Auxilia no aprendizado de novos idiomas.'
+    title: 'Video Training',
+    descricao: 'Inspirado no site LyricsTraining, o jogo propõe completar legendas de vídeos para aprender um idioma, com elementos de gamificação, placar de líderes e pontuação para maior engajamento.'
   },
   {
-    imageUrl: studyQuiz,
+    images: [studyQuiz1, studyQuiz2, studyQuiz3, studyQuiz4],
     link: 'https://study-quiz.onrender.com',
     github: 'https://github.com/Fabken42/study-quiz',
-    title: 'Crie listas e estude-as através de um quiz',
-    descricao: 'Desenvolvido usando MERN stack. Permite que os usuários criem e visualizem listas de termos, em que cada termo contém definição, lembrete e status.'
+    title: 'Study Quiz',
+    descricao: 'Crie listas com termos, definições e lembretes, e use-as em quizzes de múltipla escolha. Com base no desempenho, cada termo recebe um status, representado por emojis (como: feliz, neutro, triste).'
   },
   {
-    imageUrl: taskTimer,
+    images: [taskTimer1, taskTimer2],
     link: 'https://task-timer-khaki.vercel.app',
     github: 'https://github.com/Fabken42/task-timer',
-    title: 'Gerencie suas tarefas e monitore seu tempo',
-    descricao: 'Desenvolvido em React. Auxilia na gestão de tarefas e no monitoramento do tempo dedicado a cada atividade. Permite criar, gerenciar e acompanhar o progresso das tarefas interativamente.'
+    title: 'Task Timer',
+    descricao: 'Organize suas tarefas em uma tabela com nome, objetivo e duração, utilizando-as no timer. Marque-as como concluídas, pendentes, ou as exclua. Configure, também, sons de fundo e alertas personalizados.'
   },
   {
-    imageUrl: pixelGames,
+    images: [pixelGames1, pixelGames2, pixelGames3, pixelGames4, pixelGames5, pixelGames6],
     link: 'https://pixel-games.vercel.app',
     github: 'https://github.com/Fabken42/pixel-games',
-    title: 'Jogos 2D no estilo de pixel arte (criados em Phaser.js)',
-    descricao: 'Jogos 2D estilo pixel arte em React e Phaser'
+    title: 'Pixel Games',
+    descricao: 'Jogos 2D no estilo de pixel arte (criados em Phaser.js), incluindo clássicos como pong, snake, tetris, jogo da velha, jogo da memória, simon, e muito mais.'
   },
   {
-    imageUrl: crowdedNarrative,
+    images: [crowdedNarrative1, crowdedNarrative2, crowdedNarrative3, crowdedNarrative4],
     link: 'https://crowded-narrative.onrender.com/',
     github: 'https://github.com/Fabken42/crowded-narrative',
-    title: 'Escreva narrativas em conjunto com outras pessoas',
-    descricao: 'Desenvolvido em MERN stack. Permite que usuários criem e participem de histórias colaborativas, onde cada participante tem um tempo limitado para escrever um capítulo.'
+    title: 'Crowded Narrative',
+    descricao: 'Crie narrativas colaborativas em que cada participante escreve um capítulo, baseado no anterior. A vez de escrever segue um ciclo, e com tempo limitado para cada autor. Ao final, a história completa fica disponível para leitura.'
   },
 ];
 
 export default function Projects() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % projects.length);
-    }, 4000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
-    <Container className="mt-5 text-center" id="projects">
-      <h2 className="text-primary text-center fw-bold z-1">Meus Projetos</h2>
-      <hr className="mx-auto w-50 border-primary mt-2 mb-4" />
-      <Row className="justify-content-center">
+    <Container className="projects-container" id="projects">
+      <h2 className="projects-title">Meus Projetos</h2>
+      <hr />
+      <Row>
         {projects.map((project, i) => (
           <Col key={i} sm={12} lg={6}>
-            <Card className="mb-3 bg-dark text-white">
-              <Card.Body className="d-flex flex-column">
-                <OverlayTrigger
-                  placement="top"
-                  overlay={
-                    <Tooltip id={`tooltip-${i}`}>
-                      {project.descricao}
-                    </Tooltip>
-                  }
-                >
-                  <FontAwesomeIcon size='lg' className='mb-2 icone-info' icon={faInfoCircle} />
-                </OverlayTrigger>
-                <Card.Title className="text-center mb-3">
-                  {project.title}
-                </Card.Title>
-                <Card.Img variant="top" src={project.imageUrl} />
-                <div className="mt-auto text-center">
-                  <Button variant="primary" href={project.link} target="_blank" rel="noopener noreferrer" className="my-2 w-100">
-                    Visitar o site <FontAwesomeIcon icon={faChrome} />
-                  </Button>
-                  <Button variant="secondary" href={project.github} target="_blank" rel="noopener noreferrer" className="w-100">
-                    Projeto no github <FontAwesomeIcon icon={faGithub} />
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
+            <ProjectCard project={project} />
           </Col>
         ))}
       </Row>
     </Container>
   );
-};
+}
+
+function ProjectCard({ project }) {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Card className="project-card">
+      <Card.Body>
+        <Card.Title className="project-title mb-3">{project.title}</Card.Title>
+
+        {/* Indicador de posição da imagem */}
+        <div className="image-indicator">
+          {project.images.map((_, idx) => (
+            <span key={idx} className={`indicator-dot ${index === idx ? 'active' : ''}`} />
+          ))}
+        </div>
+
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null} controls indicators={false} className="project-carousel">
+          {project.images.map((img, idx) => (
+            <Carousel.Item key={idx}>
+              <Card.Img variant="top" src={img} className="project-image" />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+
+        <Card.Text className="project-description my-3">{project.descricao}</Card.Text>
+        <div className="project-buttons">
+          <Button className="btn-visitar " href={project.link} target="_blank" rel="noopener noreferrer">
+            Visitar o site <FontAwesomeIcon icon={faChrome} />
+          </Button>
+          <Button variant='secondary' href={project.github} target="_blank" rel="noopener noreferrer">
+            Projeto no GitHub <FontAwesomeIcon icon={faGithub} />
+          </Button>
+        </div>
+      </Card.Body>
+    </Card>
+  );
+}

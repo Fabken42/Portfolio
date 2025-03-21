@@ -4,29 +4,31 @@ import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white py-3 mt-4">
+    <footer id="contact" className="footer-container">
       <Container>
-        <Row className="justify-content-between">
-          <Col md={6} className='z-1'>
-            <h5>Redes Sociais:</h5>
-            <div className="d-flex align-items-center">
-              <a href='https://www.instagram.com/fabricio_1512/' target='_blank' rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} size="2x" className="me-3 footer-icon" />
+        <Row className="footer-content">
+          <Col md={6} className="social-section">
+            <h5 className="subtitle">Redes Sociais:</h5>
+            <div className="social-icons">
+              <a href="https://github.com/Fabken42" target="_blank" rel="noopener noreferrer" className="github">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
-              <a href='https://www.facebook.com/fabricio.kenzo.7' target='_blank' rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebook} size="2x" className="me-3 footer-icon" />
+              <a href="https://www.linkedin.com/in/fabr%C3%ADcio-kohatsu-7486a9279/" target="_blank" rel="noopener noreferrer" className="linkedin">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
-              <a href='https://www.linkedin.com/in/fabr%C3%ADcio-kohatsu-7486a9279/' target='_blank' rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" className="me-3 footer-icon" />
+              <a href="https://www.instagram.com/fabricio_1512/" target="_blank" rel="noopener noreferrer" className="instagram">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-              <a href='https://github.com/Fabken42' target='_blank' rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size="2x" className="me-3 footer-icon" />
+              <a href="https://www.facebook.com/fabricio.kenzo.7" target="_blank" rel="noopener noreferrer" className="facebook">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
               </a>
             </div>
           </Col>
-          <Col md={6} className="z-1 text-md-end mt-3 mt-md-0">
-            <h5>Entrar em Contato:</h5>
-            <a className="mb-0 text-white" href='mailto:fabken42@gmail.com'>fabken42@gmail.com</a>
+
+          <Col md={6} className="contact-section">
+            <h5 className="subtitle">Entre em Contato:</h5>
+            <p>Email: <span className="email" onClick={() => navigator.clipboard.writeText("fabken42@gmail.com")}>fabken42@gmail.com</span></p>
+            <p>Telefone: <span className="tel" onClick={() => navigator.clipboard.writeText("(11) 95481-8106")}> (11) 95481-8106</span></p>
           </Col>
         </Row>
       </Container>

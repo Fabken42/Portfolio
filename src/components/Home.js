@@ -7,27 +7,25 @@ import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
     return (
-        <Container id="home" className="my-4 inicio">
-            <Row>
-                <Col xs={12} md={6} className="text-center z-1">
+        <Container id="home" className="home-container">
+            <Row className="align-items-center">
+                <Col sm={12} md={6} className="image-container">
                     <img
                         src={fotoFabricio}
                         alt="Foto de Fabricio Kohatsu"
-                        className="img-fluid rounded w-100 retrato"
+                        className="profile-image"
                     />
                 </Col>
 
-                <Col xs={12} md={6} className="d-flex flex-column justify-content-center align-items-center">
-                    <h1 className="z-1 text-primary text-center fw-bold">
-                        Visão Geral
-                    </h1>
-                    <hr className="text-center w-50 border-primary mt-2 mb-4" />
-                    <p className="text-center texto">
-                        Estudo programação há 4 anos, cursando 1º ano em <strong className="text-primary">Análise e Desenvolvimento de Sistemas</strong>. Procuro vaga como programador Full Stack, tendo experiência com <strong className="text-primary">MERN stack</strong> (MongoDB, Express.js, React.js e Node.js), para desenvolver meus conhecimentos e contribuir com a empresa.
+                <Col sm={12} md={6} className="text-container">
+                    <h1 className="title">Visão Geral</h1>
+                    <hr />
+                    <p className="description">
+                        Estudo programação há 4 anos, atualmente curso o 2º ano em <span className='highlight'>Análise e Desenvolvimento de Sistemas</span>. Tenho experiência em desenvolvimento <span className='highlight'>Full Stack em MERN stack</span> (MongoDB, Express.js, React.js e Node.js), adquirida através de projetos individuais com base em ideias próprias. Busco uma oportunidade onde possa aplicar minhas habilidades, expandir meu conhecimento e contribuir com soluções inovadoras.
                     </p>
-                    <a href={curriculoPdf} target="_blank" className="z-1 btn btn-primary rounded-pill">
+                    <a href={curriculoPdf} target="_blank" className="cv-button">
                         Download CV
-                        <FontAwesomeIcon icon={faBookOpen} className="ms-2" size="md" />
+                        <FontAwesomeIcon icon={faBookOpen} size="md" className="cv-icon" />
                     </a>
                 </Col>
             </Row>
