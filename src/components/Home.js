@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import fotoFabricio from '../img/fabricioK.jpg';
-import curriculoPdf from '../pdf/cvAtualizado2024.pdf';
+import curriculoPdf from '../pdf/cvAtualizado2025.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
