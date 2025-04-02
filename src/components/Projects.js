@@ -39,18 +39,18 @@ const projects = [
     descricao: 'Inspirado no site LyricsTraining, o jogo propõe completar legendas de vídeos para aprender um idioma, com elementos de gamificação, placar de líderes e pontuação para maior engajamento.'
   },
   {
-    images: [studyQuiz1, studyQuiz2, studyQuiz3, studyQuiz4],
-    link: 'https://study-quiz.onrender.com',
-    github: 'https://github.com/Fabken42/study-quiz',
-    title: 'Study Quiz',
-    descricao: 'Crie listas com termos, definições e lembretes, e use-as em quizzes de múltipla escolha. Com base no desempenho, cada termo recebe um status, representado por emojis (como: feliz, neutro, triste).'
-  },
-  {
     images: [taskTimer1, taskTimer2],
     link: 'https://task-timer-khaki.vercel.app',
     github: 'https://github.com/Fabken42/task-timer',
     title: 'Task Timer',
     descricao: 'Organize suas tarefas em uma tabela com nome, objetivo e duração, utilizando-as no timer. Marque-as como concluídas, pendentes, ou as exclua. Configure, também, sons de fundo e alertas personalizados.'
+  },
+  {
+    images: [studyQuiz1, studyQuiz2, studyQuiz3, studyQuiz4],
+    link: 'https://study-quiz.onrender.com',
+    github: 'https://github.com/Fabken42/study-quiz',
+    title: 'Study Quiz',
+    descricao: 'Crie listas com termos, definições e lembretes, e use-as em quizzes de múltipla escolha. Com base no desempenho, cada termo recebe um status, representado por emojis (como: feliz, neutro, triste).'
   },
   {
     images: [pixelGames1, pixelGames2, pixelGames3, pixelGames4, pixelGames5, pixelGames6],
