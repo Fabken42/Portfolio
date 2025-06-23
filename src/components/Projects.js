@@ -15,8 +15,7 @@ import crowdedNarrative2 from '../img/crowdedNarrative2.png';
 import crowdedNarrative3 from '../img/crowdedNarrative3.png';
 import crowdedNarrative4 from '../img/crowdedNarrative4.png';
 
-import taskTimer1 from '../img/taskTimer1.png';
-import taskTimer2 from '../img/taskTimer2.png';
+import rollMyTask from '../img/roll-my-task.png';
 
 import studyQuiz1 from '../img/studyQuiz1.png';
 import studyQuiz2 from '../img/studyQuiz2.png';
@@ -39,11 +38,11 @@ const projects = [
     descricao: 'Inspirado no site LyricsTraining, o jogo propõe completar legendas de vídeos para aprender um idioma, com elementos de gamificação, placar de líderes e pontuação para maior engajamento.'
   },
   {
-    images: [taskTimer1, taskTimer2],
-    link: 'https://task-timer-khaki.vercel.app',
-    github: 'https://github.com/Fabken42/task-timer',
-    title: 'Task Timer',
-    descricao: 'Organize suas tarefas em uma tabela com nome, objetivo e duração, utilizando-as no timer. Marque-as como concluídas, pendentes, ou as exclua. Configure, também, sons de fundo e alertas personalizados.'
+    images: [rollMyTask],
+    link: 'https://roll-my-task.vercel.app/',
+    github: 'https://github.com/Fabken42/roll-my-task',
+    title: 'Roll My Task',
+    descricao: 'Digite as tarefas que deseja realizar, e clique no dado, que escolherá aleatoriamente o que será feito. O site também permite concluir, excluir e editar as tarefas da lista.'
   },
   {
     images: [studyQuiz1, studyQuiz2, studyQuiz3, studyQuiz4],
